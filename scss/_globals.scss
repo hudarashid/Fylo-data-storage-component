@@ -1,0 +1,72 @@
+//colors
+$paleBlue: hsl(243, 100%, 93%);
+$grayishBlue: hsl(229, 7%, 55%);
+$darkBlue: hsl(228, 56%, 26%);
+$veryDarkBlue: hsl(229, 57%, 11%);
+
+//gradient bar
+$firstGradient: hsl(6, 100%, 80%);
+$secondGradient: hsl(335, 100%, 65%);
+
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    background: url('../images/bg-mobile.png') no-repeat center center fixed;
+    background-size: cover;
+    
+
+    @media (min-width: 64.0625em) {
+        background-color: $veryDarkBlue;
+        background: url('../images/bg-desktop.png') no-repeat bottom fixed;
+        //background-size: cover;
+        
+    }
+    
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    //background-color: $veryDarkBlue;
+    
+}
+
+
+.container {
+
+    @media (min-width: 41.6875em) {
+        margin-right: 6.25rem;
+        margin-left: 6.25rem;
+        
+    }
+
+    @media (min-width: 64em) {
+        display: flex;  
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    @media (min-width: 64.0625em) {
+        display: flex;  
+        margin-left: 6.25rem;
+        margin-right: 6.25rem;
+    }
+    
+}
+    
+
+nav {
+    background-color: $darkBlue;
+    margin: 0 1.5rem 1rem 1.5rem;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    border-radius: 0.75rem 5.3125rem 0.75rem 0.75rem;
+
+    @media (mid-width: 64em) {
+        margin-left: 4.75rem;
+    }
+}

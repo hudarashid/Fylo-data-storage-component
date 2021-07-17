@@ -1,0 +1,33 @@
+.header {
+    padding-top: 7.875rem;
+
+    &__logo {
+        padding-bottom: 2rem;
+    }
+
+    &__links {
+
+        a {
+            padding: 1.25rem 0.625rem 0.5rem 0.875rem;
+            border-radius: 0.75rem;
+            margin-right: 1rem;
+            background-color: $veryDarkBlue;
+
+            &.icon {
+
+                &__upload {
+                    padding-right: 0.75rem;
+                    padding-left: 0.75rem;
+
+                    @media (min-width: 64em) {
+                        margin-right: 8.3125rem;
+                    }
+
+                    img {
+                        height: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+}
