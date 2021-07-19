@@ -13,75 +13,76 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; color:beige }
+    .attribution { font-size: 11px; text-align: center; color:beige; }
     .attribution a { color: hsl(227, 9%, 60%); }
   </style>
 </head>
 
 
 <body>
-  
+  <div class="bg">
 
-  <div class="container">
-    
-    <section class="header">
+    <div class="container">
       
-      <nav>
-        <a href="/" class="header__logo">
-          <img class="header__logo" src="images/logo.svg" alt="fyloLogo" />
-        </a>
+      <section class="header">
+        
+        <nav>
+          <a href="/" class="header__logo">
+            <img class="header__logo" src="images/logo.svg" alt="fyloLogo" />
+          </a>
 
-        <div class="header__links">
-          <a class="icon icon__document" href="#">
-            <img src="images/icon-document.svg" alt="document" />
-          </a>
-          <a class="icon icon__file" href="#">
-            <img src="images/icon-folder.svg" alt="folder" />
-          </a>
-          <a class="icon icon__upload" href="#">
-            <img src="images/icon-upload.svg" alt="upload" />
-          </a>
+          <div class="header__links">
+            <a class="icon icon__document" href="#">
+              <img src="images/icon-document.svg" alt="document" />
+            </a>
+            <a class="icon icon__file" href="#">
+              <img src="images/icon-folder.svg" alt="folder" />
+            </a>
+            <a class="icon icon__upload" href="#">
+              <img src="images/icon-upload.svg" alt="upload" />
+            </a>
+            
+          </div>
+
+        </nav>
+
+      </section>
+
+      <section class="storage">
+        
+        <div class="storage__storageLeft">
+          You’ve used 815 GB of your storage
+        </div>
+        
+        <div class="storage__progressBar">
+          <div class="pinkBar">
+            <div class="whiteDot"></div>
+          </div>
+        </div>
+        <div class="storage__storageSize">
+          <div class="zero">0 GB</div>
+          <div class="thousand">1000 GB</div>
           
         </div>
 
-      </nav>
+      </section>
 
-    </section>
+      <section class="storageLeft">
 
-    <section class="storage">
-      
-      <div class="storage__storageLeft">
-        You’ve used 815 GB of your storage
-      </div>
-      
-      <div class="storage__progressBar">
-        <div class="pinkBar">
-          <div class="whiteDot"></div>
-        </div>
-      </div>
-      <div class="storage__storageSize">
-        <div class="zero">0 GB</div>
-        <div class="thousand">1000 GB</div>
+        <div class="storageLeft__number">185</div>
+        <div class="storageLeft__gbLeft">GB LEFT</div>
+        <div class="storageLeft__triangle"></div>
         
-      </div>
-
-    </section>
-
-    <section class="storageLeft">
-
-      <div class="storageLeft__number">185</div>
-      <div class="storageLeft__gbLeft">GB LEFT</div>
-      <div class="storageLeft__triangle"></div>
+      </section>
       
-    </section>
-    
-  </div>
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n/hub/fylo-data-storage-component-_P3SBDHEU" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/hudarashid" target="_blank">Huda Rashid</a>.
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n/hub/fylo-data-storage-component-_P3SBDHEU" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/hudarashid" target="_blank">Huda Rashid</a>.
+      </div>
   </div>
-  
+ 
   
 
 </body>

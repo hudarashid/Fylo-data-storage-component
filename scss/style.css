@@ -2,15 +2,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../images/bg-mobile.png") no-repeat center center fixed;
-  background-size: cover;
-}
-
-@media (min-width: 64.0625em) {
-  html {
-    background-color: #0c122c;
-    background: url("../images/bg-desktop.png") no-repeat bottom fixed;
-  }
+  background-color: #0c122c;
 }
 
 *, *::before, *::after {
@@ -21,6 +13,36 @@ html {
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  overflow-y: hidden;
+}
+
+.bg {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/bg-mobile.png");
+  height: 64em;
+}
+
+@media (min-width: 64em) {
+  .bg {
+    background: url("../images/bg-desktop.png") #0c122c;
+    background-position: bottom -1.25em left 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 64.0625em) {
+  .bg {
+    background-position: bottom -5em left 0px;
+  }
+}
+
+.container {
+  z-index: 2;
+  position: relative;
 }
 
 @media (min-width: 41.6875em) {
@@ -35,8 +57,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 1.25rem;
+    margin-left: 3.75rem;
     margin-right: 1.25rem;
+    margin-top: 9.5rem;
   }
 }
 
@@ -47,7 +70,13 @@ body {
     display: flex;
     margin-left: 6.25rem;
     margin-right: 6.25rem;
+    margin-top: 0;
   }
+}
+
+.attribution {
+  z-index: 2;
+  position: relative;
 }
 
 nav {
@@ -313,6 +342,12 @@ nav {
     left: 7.55rem;
     border-top: 1.3125rem solid white;
     border-left: 1.3125rem solid transparent;
+  }
+}
+
+@media (min-width: 64.0625em) {
+  .storageLeft:before {
+    left: 8.4375rem;
   }
 }
 

@@ -23,6 +23,10 @@
             border-top: 1.3125rem solid white;
             border-left: 1.3125rem solid transparent;
         }
+
+        @media (min-width: 64.0625em) {
+            left: 8.4375rem;
+        }
         
     } 
 

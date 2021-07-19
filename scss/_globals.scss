@@ -12,16 +12,8 @@ $secondGradient: hsl(335, 100%, 65%);
 html {
     font-size: 100%;
     box-sizing: border-box;
-    background: url('../images/bg-mobile.png') no-repeat center center fixed;
-    background-size: cover;
-    
-
-    @media (min-width: 64.0625em) {
-        background-color: $veryDarkBlue;
-        background: url('../images/bg-desktop.png') no-repeat bottom fixed;
-        //background-size: cover;
-        
-    }
+    background-color: $veryDarkBlue;
+   
     
 }
 
@@ -32,12 +24,35 @@ html {
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    //background-color: $veryDarkBlue;
-    
+    overflow-y: hidden;
+   
+}
+
+.bg {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-image: url('../images/bg-mobile.png');
+    height: 64em;
+
+    @media (min-width: 64em) {
+        background: url('../images/bg-desktop.png')  $veryDarkBlue;
+        background-position: bottom -1.25em left 0px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-width: 64.0625em) {
+        background-position: bottom -5em left 0px;
+    }
 }
 
 
 .container {
+    z-index: 2;
+    position: relative;
+    
 
     @media (min-width: 41.6875em) {
         margin-right: 6.25rem;
@@ -47,18 +62,24 @@ body {
 
     @media (min-width: 64em) {
         display: flex;  
-        margin-left: 1.25rem;
+        margin-left: 3.75rem;
         margin-right: 1.25rem;
+        margin-top: 9.5rem;
     }
 
     @media (min-width: 64.0625em) {
         display: flex;  
         margin-left: 6.25rem;
         margin-right: 6.25rem;
+        margin-top: 0;
     }
     
 }
-    
+
+.attribution {
+    z-index: 2;
+    position: relative;
+}
 
 nav {
     background-color: $darkBlue;
@@ -70,3 +91,4 @@ nav {
         margin-left: 4.75rem;
     }
 }
+
