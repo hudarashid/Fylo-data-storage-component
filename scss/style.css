@@ -74,11 +74,6 @@ body {
   }
 }
 
-.attribution {
-  z-index: 2;
-  position: relative;
-}
-
 nav {
   background-color: #1d2c67;
   margin: 0 1.5rem 1rem 1.5rem;
