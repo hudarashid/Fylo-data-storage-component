@@ -16,6 +16,12 @@ body {
   overflow-y: hidden;
 }
 
+@media (min-width: 667px) and (max-width: 813px) {
+  body {
+    overflow: scroll;
+  }
+}
+
 .bg {
   background-position: center center;
   background-attachment: fixed;

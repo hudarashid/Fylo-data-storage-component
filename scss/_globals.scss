@@ -25,6 +25,10 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     overflow-y: hidden;
+
+    @media (min-width: 667px) and (max-width: 813px) {
+        overflow: scroll;
+    }
    
 }
 
