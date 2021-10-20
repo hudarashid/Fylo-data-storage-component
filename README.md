@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo data storage component solution
 
-This is a solution to the [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n). Frontend Mentor challenges help you improve your coding skills by building real projects. 
 
 ## Table of contents
 
@@ -41,7 +41,7 @@ Users should be able to:
 
 ### What I learned
 1. Positioning the pink progress bar for different width
-2. Positioning the background-img and setting background color.
+2. Position the background-img and set the background color.
 
 ```css
 .bg {
@@ -63,7 +63,7 @@ Try to build the progress bar by using JS
 
 ## Author
 
-- Frontend Mentor - [@kopisatu](https://www.frontendmentor.io/profile/kopisatu)
+- Frontend Mentor - [@hudarashid](https://www.frontendmentor.io/profile/hudarashid)
 - Twitter - [@hudaMRashid](https://twitter.com/hudaMRashid)
 
 
